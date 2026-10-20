@@ -1,0 +1,103 @@
+{
+ "id": "./",
+ "name": "Tiny Wins",
+ "short_name": "Tiny Wins",
+ "description": "Small steps, no guilt. Tiny tasks, a 5-minute timer and calm sounds. Works offline.",
+ "lang": "en",
+ "dir": "ltr",
+ "start_url": "./?source=pwa",
+ "scope": "./",
+ "display": "standalone",
+ "display_override": [
+  "standalone",
+  "minimal-ui"
+ ],
+ "orientation": "any",
+ "background_color": "#f3f1ec",
+ "theme_color": "#4e6a85",
+ "categories": [
+  "productivity",
+  "lifestyle",
+  "health"
+ ],
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/icon-256.png",
+   "sizes": "256x256",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-maskable-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "icon.svg",
+   "sizes": "any",
+   "type": "image/svg+xml",
+   "purpose": "any"
+  }
+ ],
+ "screenshots": [
+  {
+   "src": "screenshots/narrow-home.png",
+   "sizes": "780x1688",
+   "type": "image/png",
+   "form_factor": "narrow",
+   "label": "Today: your top priority"
+  },
+  {
+   "src": "screenshots/wide-home.png",
+   "sizes": "1280x800",
+   "type": "image/png",
+   "form_factor": "wide",
+   "label": "Tiny Wins on a desktop"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "Start a 5-minute focus",
+   "short_name": "Focus",
+   "url": "./?tab=timer&source=shortcut",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192",
+     "type": "image/png"
+    }
+   ]
+  },
+  {
+   "name": "Habits",
+   "short_name": "Habits",
+   "url": "./?tab=habits&source=shortcut",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192",
+     "type": "image/png"
+    }
+   ]
+  }
+ ]
+}

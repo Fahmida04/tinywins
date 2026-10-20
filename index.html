@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tiny Wins</title><meta name="description" content="Small steps. Real progress.">
+<link rel="icon" href="favicon.svg"><link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#f3f1ec">
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#fdf6ee,#eef3fb);font-family:-apple-system,system-ui,"Segoe UI",Roboto,sans-serif;color:#2d2a32;padding:24px}
+.c{max-width:420px;width:100%;text-align:center;background:#fff;border-radius:28px;padding:32px 24px;box-shadow:0 10px 40px rgba(60,50,90,.12)}
+img.i{width:104px;height:104px;border-radius:24px}h1{margin:14px 0 4px;font-size:30px}p.s{margin:0 0 22px;color:#6b6475}
+a.b{display:block;padding:16px;border-radius:16px;font-weight:700;font-size:17px;text-decoration:none;margin:10px 0;background:#7c6cf0;color:#fff}
+a.b.alt{background:#f1eefc;color:#5a4bd1}ol{text-align:left;padding-left:22px;line-height:1.9;margin:16px 0 0}
+.n{font-size:13px;color:#8a8494;margin-top:6px}.sec{display:none}h2{font-size:15px;margin:24px 0 6px;color:#6b6475}
+ul{list-style:none;padding:0;margin:0;font-size:14px;line-height:1.9}ul a{color:#5a4bd1}
+@media(prefers-color-scheme:dark){body{background:#17151c;color:#eee}.c{background:#221f2a}a.b.alt{background:#2e2940;color:#c9c0ff}ul a{color:#c9c0ff}}
+</style></head><body><main class="c">
+<img class="i" src="icon-192.png" alt="Tiny Wins icon"><h1>Tiny Wins</h1><p class="s">Small steps. Real progress.</p>
+<section class="sec" id="ios"><a class="b" href="ios/">Open iPhone app</a>
+<ol><li>Tap <b>Share</b></li><li>Tap <b>Add to Home Screen</b></li><li>Open <b>Tiny Wins</b></li></ol></section>
+<section class="sec" id="android"><a class="b" href="downloads/TinyWins-1.0.0-android.apk" download>Download for Android</a>
+<p class="n">If Play Protect warns, tap <b>Install anyway</b>.</p><a class="b alt" href="app/">Use in browser</a></section>
+<section class="sec" id="desk"><a class="b" href="app/">Open in browser</a><a class="b alt" href="ios/">iPhone app</a>
+<a class="b alt" href="downloads/TinyWins-1.0.0-android.apk" download>Android APK</a>
+<h2>Windows, Mac, Linux</h2><ul><li><a id="rel" href="#">Download installers</a></li></ul></section>
+</main><script>
+var u=navigator.userAgent,ios=/iPhone|iPad|iPod/.test(u)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1),and=/Android/.test(u);
+document.getElementById(ios?'ios':and?'android':'desk').style.display='block';
+var h=location.hostname.split('.')[0];document.getElementById('rel').href=/github\.io$/.test(location.hostname)?'https://github.com/'+h+'/tinywins/releases/latest':'#';
+</script></body></html>

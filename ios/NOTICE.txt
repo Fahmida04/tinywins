@@ -1,0 +1,29 @@
+Tiny Wins - third-party notices
+================================
+Tiny Wins is a self-contained web app (HTML, CSS, JavaScript). It contains NO third-party code, libraries, frameworks, web fonts or icon sets, and it loads nothing from the network except (a) when you tap an external link and (b) the optional lofi player, which streams music over HTTPS from Wikimedia Commons only after you press play.
+
+Third-party material included
+-----------------------------
+Five short ambient audio loops (embedded in sounds.js; all copies are edited):
+ - Rain: "LightRainDistantThunderJuly5th2016.WAV" by kvgarlic, CC0 1.0 - https://freesound.org/people/kvgarlic/sounds/349454/
+ - Shore waves: "Waves" by Dsw4, public domain - https://commons.wikimedia.org/wiki/File:Waves.ogg
+ - Stream: "Stream River Water Up Close" by jackthemurray, CC0 1.0 - https://freesound.org/people/jackthemurray/sounds/433589/
+ - Soft wind: "Gentle breeze and birds singing" by ezwa (PDSounds), public domain - https://commons.wikimedia.org/wiki/File:Gentle_breeze_and_birds_singing.ogg
+ - Cafe: "Restaurant Ambience" by Stephan (PDSounds), public domain - https://commons.wikimedia.org/wiki/File:Restaurant_ambience.ogg
+CC0 1.0 text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Changes made to each recording (trimming, filtering, compression of the rain, level matching, looping, conversion to mono 48 kbps mp3) are listed in sounds/LICENSES.txt and in the app under Settings > Credits.
+
+Streamed online (the lofi player; not included in the app files)
+---------------------------------------------------------------
+Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons Attribution 3.0 (CC BY 3.0), https://creativecommons.org/licenses/by/3.0/ - streamed unchanged from Wikimedia Commons (https://commons.wikimedia.org). Tracks: "Slow Jam"; "Summer Day"; "Dream Culture"; "Backed Vibes (clean)"; "Chill Wave"; "Deliberate Thought"; "Windswept"; "Clear Air"; "Dreamer". Source link for each track, track-info link and the "changes: none" statement are in sounds/LICENSES.txt and in the app under Settings > Credits. Kevin MacLeod and Wikimedia are not affiliated with this app.
+
+Desktop apps (only in the separate installers, not in the web app)
+--------------------------------------------------------------
+The Windows, macOS and Linux desktop apps are packaged with Electron (https://www.electronjs.org), MIT licence, Copyright (c) Electron contributors and GitHub Inc. Electron includes Chromium and other components under their own licences; the full texts ship inside every desktop build as LICENSE.electron.txt and LICENSES.chromium.html. Packaging tools used at build time and not shipped: electron-builder (MIT), resedit (MIT). The Android app is a small WebView wrapper written for Tiny Wins; it bundles no third-party libraries.
+
+Not third-party
+---------------
+App icon (icon.svg, favicon.svg, icons/*, icon-*.png, favicon.ico, apple-touch-icon.png, the Windows .ico, the macOS .icns and the Android launcher icons): original artwork created for Tiny Wins (three soft cushion steps with a smiling star on top, in slate blue, sage green, soft sand and butter yellow), drawn from plain geometric shapes and gradients. It uses no third-party artwork, fonts or icon sets, and is covered by the same licence as the app.
+Fonts: none bundled; the system font stack is used. The check mark in the UI is a Unicode character drawn by the device font.
+Emoji: none are used by the app; any emoji a user types are drawn by the device's own emoji font.
+All synthesized sounds (brown noise, soft noise, calm tones) are generated in the browser with the Web Audio API.

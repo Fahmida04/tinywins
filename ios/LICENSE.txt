@@ -1,0 +1,4 @@
+Tiny Wins - application code and original artwork
+Copyright (c) 2026 Chun Lee. All rights reserved.
+
+(This is a placeholder. The owner can replace this file with a permissive licence such as MIT if they want to share the code. It does not change the licences of the third-party audio listed in NOTICE.txt and sounds/LICENSES.txt, which stay as stated there.)

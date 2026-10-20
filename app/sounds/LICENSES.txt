@@ -1,0 +1,73 @@
+Tiny Wins - ambient sound sources and licences
+Audit date: 18 Oct 2026 (rain re-processed and lofi sources added 19 Oct 2026). Each source page was re-opened and the licence text read on that date.
+
+The files in this folder are PROCESSED COPIES (mono, 48 kbps mp3, filtered, loudness-matched, crossfaded into seamless loops).
+The app uses the base64 copies in ../sounds.js. CC0 and public-domain works need no attribution; credit is given anyway.
+
+1) rain.mp3   (in app: "Rain")
+   Title:    LightRainDistantThunderJuly5th2016.WAV (Wikimedia Commons copy: "Light Rain Distant Thunder July 5th 2016.wav")
+   Author:   kvgarlic (recorded 5 Jul 2016, Illinois, USA)
+   Source:   https://freesound.org/people/kvgarlic/sounds/349454/
+   Mirror:   https://commons.wikimedia.org/wiki/File:Light_Rain_Distant_Thunder_July_5th_2016.wav
+   Licence:  CC0 1.0 Universal  https://creativecommons.org/publicdomain/zero/1.0/
+   Verified: Freesound page states "You can copy, modify, distribute and perform the sound, even for commercial purposes, all without the need of asking permission" (CC0); Commons metadata says CC0, attribution not required.
+   Changes:  trimmed; high-pass filtered to remove the distant thunder; (19 Oct 2026 re-process, to be gentler) quiet hiss kept as a warm bed, soft roll-off above about 4 kHz plus a gentle high-frequency tilt, drop peaks compressed with a bed-relative soft limiter and their attacks softened, rumble below 150 Hz removed, a very quiet generated room tone added (synthesised, no recording, nothing to license); three excerpts layered and crossfaded into a seamless 36 s loop; mono, 48 kbps mp3.
+   Measured (old -> new): peak -1.9 -> -10.1 dBFS; crest factor 31 -> 17 dB; fastest rise 24 -> 12 dB per 5 ms; energy above 3 kHz 6.2% -> 2.2%; above 4.5 kHz 0.95% -> 0.30%; spectral centroid 1304 -> 891 Hz; loop seam jump 1.15x normal, level step 0.7 dB.
+
+2) ocean.mp3  (in app: "Shore waves")   <-- REPLACED on 18 Oct 2026
+   Title:    Waves  (File:Waves.ogg)
+   Author:   Dsw4, own work, recorded autumn 2008 on the shore of Lake Ontario, Webster NY (a lake, not the ocean, hence the label "Shore waves")
+   Source:   https://commons.wikimedia.org/wiki/File:Waves.ogg
+   Licence:  Public domain. Author's statement on the page: "I, the copyright holder of this work, release this work into the public domain. This applies worldwide. In some countries this may not be legally possible; if so: I grant anyone the right to use this work for any purpose, without any conditions, unless such conditions are required by law."
+   Changes:  56 s excerpt (26 s to 88 s of the 4:47 original); mono; 50 Hz high-pass and 9 kHz low-pass; volume matched; crossfaded into a loop; 48 kbps mp3.
+   Why replaced: the previous file ("Ocean Waves on a Tropical Beach", CC0 label by uploader "Jarrod stanley", uploaded 31 Aug 2026) could not be verified: the page credits "Own work" but the description names a different person ("J.D. Savanyu"), and the upload is very recent with no history. Removed from the app and from sounds.js.
+
+3) stream.mp3 (in app: "Stream")
+   Title:    Stream River Water Up Close
+   Author:   jackthemurray (recorded 2018)
+   Source:   https://freesound.org/people/jackthemurray/sounds/433589/
+   Mirror:   https://commons.wikimedia.org/wiki/File:433589_jackthemurray_stream-river-water-up-close.wav
+   Licence:  CC0 1.0 Universal  https://creativecommons.org/publicdomain/zero/1.0/
+   Verified: Freesound page shows the CC0 permission text; Commons metadata CC0, attribution not required.
+   Changes:  trimmed to 56 s; mono; filtered (50 Hz high-pass, 12 kHz low-pass); volume matched; crossfaded loop; 48 kbps mp3.
+
+4) breeze.mp3 (in app: "Soft wind")
+   Title:    Gentle breeze and birds singing (Blackcap and Chaffinch with a gentle breeze)
+   Author:   ezwa (recorded 18 Apr 2007), published on PDSounds (record 129)
+   Source:   https://commons.wikimedia.org/wiki/File:Gentle_breeze_and_birds_singing.ogg
+   Original: http://www.pdsounds.org/sounds/gentle_breeze_and_birds_singing  (site no longer fetchable; checked via Commons metadata)
+   Licence:  Public domain (PDSounds: "pdsounds donates its recordings to the public domain", Wayback copy of https://www.pdsounds.org/about). Commons marks it Public domain, copyrighted: false, attribution not required.
+   Changes:  trimmed to 24 s; mono; filtered; volume matched; crossfaded loop; 48 kbps mp3.
+
+5) cafe.mp3   (in app: "Cafe")
+   Title:    Restaurant Ambience
+   Author:   Stephan (recorded 18 May 2007 in a restaurant in Germany), PDSounds record 274
+   Source:   https://commons.wikimedia.org/wiki/File:Restaurant_ambience.ogg
+   Original: http://www.pdsounds.org/sounds/restaurant_ambience (read via web.archive.org)
+   Licence:  Public domain (PDSounds policy as above; Commons: Public domain, attribution not required).
+   Changes:  trimmed to 64 s; mono; filtered; volume matched; crossfaded loop; 48 kbps mp3.
+   Note:     contains background crowd murmur (no intelligible speech in the excerpt used as far as could be checked by metrics only; not listened to).
+
+Generated on the device (no recordings, nothing to license): brown noise, soft (pink) noise, calm tones.
+
+Lofi player (in-app, ONLINE ONLY, streamed - not bundled, not cached)
+   The app streams nine chill instrumental tracks by Kevin MacLeod (incompetech.com) with an HTML <audio> element from Wikimedia Commons (https://upload.wikimedia.org/wikipedia/commons/...). Nothing is downloaded into the app, stored in the service-worker cache, or saved on the device by the app.
+   Licence:  Creative Commons Attribution 3.0 Unported (CC BY 3.0) https://creativecommons.org/licenses/by/3.0/ - as stated on each Commons file page ("This file is licensed under the Creative Commons Attribution 3.0 Unported license"; "Attribution: <Title> Kevin MacLeod (incompetech.com)"). Conditions: give appropriate credit, link to the licence, indicate if changes were made, do not suggest endorsement.
+   Author's terms: https://incompetech.com/music/royalty-free/faq.html says the music may be used on streaming sites and in other projects, and to "be sure to credit me". It says a credit must be easy to find, and that a reasonable effort such as clicking on a credits option is acceptable; for video games it names a Credits screen in the settings menu. The author's site now offers the same music under CC BY 4.0; the Commons copies we stream are labelled CC BY 3.0, so the app credits CC BY 3.0 with a link to the licence text.
+   Hotlinking: Wikimedia's policy allows embedding/hotlinking files from Wikimedia servers (it is "not generally recommended" for reliability reasons). The app therefore fails over to the next track when a file does not load and shows a message when all fail.
+   Changes:  none to the audio. The app plays the files exactly as published; it only plays them quieter (a per-track volume factor) so all tracks sound equally loud.
+   Credit display: Settings > Credits lists every track (title, artist, source link, track-info link, licence link, changes) and all sound credits. The Focus screen shows no credit text, only the title of the track that is playing; the system media controls show title and artist.
+   Tracks (title | ISRC | Commons file page):
+     - "Slow Jam" | USUAN1600015 | https://commons.wikimedia.org/wiki/File:Slow_Jam_%28ISRC_USUAN1600015%29.mp3
+     - "Summer Day" | USUAN1200083 | https://commons.wikimedia.org/wiki/File:Summer_Day_%28ISRC_USUAN1200083%29.mp3
+     - "Dream Culture" | USUAN1300046 | https://commons.wikimedia.org/wiki/File:Dream_Culture_%28ISRC_USUAN1300046%29.mp3
+     - "Backed Vibes (clean)" | USUAN1100479 | https://commons.wikimedia.org/wiki/File:Backed_Vibes_%28clean%29_%28ISRC_USUAN1100479%29.mp3
+     - "Chill Wave" | USUAN1600048 | https://commons.wikimedia.org/wiki/File:Chill_Wave_%28ISRC_USUAN1600048%29.mp3
+     - "Deliberate Thought" | USUAN1100261 | https://commons.wikimedia.org/wiki/File:Deliberate_Thought_%28ISRC_USUAN1100261%29.mp3
+     - "Windswept" | USUAN1100757 | https://commons.wikimedia.org/wiki/File:Windswept_%28ISRC_USUAN1100757%29.mp3
+     - "Clear Air" | USUAN1100626 | https://commons.wikimedia.org/wiki/File:Clear_Air_%28ISRC_USUAN1100626%29.mp3
+     - "Dreamer" | USUAN1600043 | https://commons.wikimedia.org/wiki/File:Dreamer_%28ISRC_USUAN1600043%29.mp3
+   Verified 18-19 Oct 2026 with curl: every file URL answers HTTP 200 audio/mpeg with accept-ranges: bytes; a Range request returns 206 with an mp3 frame header; responses carry access-control-allow-origin: * (not needed for <audio> playback anyway). Commons API metadata for each file: licence "CC BY 3.0", author "Kevin MacLeod".
+   Kevin MacLeod, incompetech and Wikimedia are not affiliated with Tiny Wins and do not endorse it.
+
+SomaFM (https://somafm.com) is NOT used. Its Terms of Service (https://somafm.com/legal/tos.html, 4 Sep 2026) forbid embedding or restreaming without written permission, so all SomaFM code, links and credits were removed from the app on 19 Oct 2026.
